@@ -10,7 +10,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Jaime Rosales",
   "license": "MIT",
@@ -28,18 +30,19 @@
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "6.3.13",
     "babel-preset-stage-0": "6.5.0",
-    "bootstrap": ">=3.4.0",
+    "bootstrap": ">=4.3.1",
     "classnames": "^2.2.6",
     "express": "^4.16.3",
     "font-awesome": "^4.7.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.11",
     "npm-run-all": "^3.1.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "react-redux": ">=6.0.0",
-    "react-scripts": ">=2.1.5",
+    "react-scripts": ">=3.0.0",
     "redux": "^3.6.0",
-    "scroll-to": "0.0.2"
+    "scroll-to": "0.0.2",
+    "snyk": "^1.220.0"
   },
   "devDependencies": {},
   "babel": {
@@ -57,5 +60,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
